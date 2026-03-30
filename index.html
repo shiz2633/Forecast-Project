@@ -3,30 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Arima:wght@100..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather Forecast</title>
   </head>
   <body>
     <div class="weather-forecast">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
 
       <main>
-        <div>
-          <h1>London</h1>
-          <p>
-            Tuesday 21:00 <br />
-            Cloudy <br />
-            Precipitation: 27% Humidity: 81% Wind: 18 mph
-          </p>
+        <div class="weather-forecast-data">
+          <div>
+            <h1 class="weather-forecast-city">London</h1>
+            <p class="weather-forecast-details">
+              Tuesday 21:00 <br />
+              Cloudy <br />
+              Precipitation:<strong>27% </strong>Humidity:<strong> 81% </strong
+              >Wind :<strong>18 mph</strong>
+            </p>
+          </div>
+          <div>🌥️ 9°c</div>
         </div>
-        <div>🌥️ 9°c</div>
       </main>
-
       <footer>
         Coded by
         <a href="https://www.shecodes.io/graduates/159243-s-k" target="_blank"
