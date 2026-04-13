@@ -15,33 +15,32 @@
   <body>
     <div class="weather-forecast">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            id="search-form-input"
             class="search-form-input"
           />
-
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
-
       <main>
         <div class="weather-forecast-data">
           <div>
-            <h1 class="weather-forecast-city">London</h1>
+            <h1 class="weather-forecast-city" id="city">London</h1>
+            <div class="weather-forecast-temperature-container">
+              <div class="weather-forecast-icon">🌥️</div>
+              <div class="weather-forecast-temperature">9</div>
+              <div class="weather-forecast-unit">°C</div>
+            </div>
             <p class="weather-forecast-details">
-              Tuesday 21:00 <br />
-              Cloudy <br />
-              Precipitation:<strong> 27% </strong>Humidity:<strong> 81% </strong
-              >Wind :<strong>18 mph</strong>
+              Tuesday 21:00 <br />Cloudy Precipitation:<strong> 27% </strong
+              ><br />Humidity:<strong> 81% </strong><br />Wind :<strong
+                >18 mph</strong
+              >
             </p>
-          </div>
-          <div class="weather-forecast-temperature-container">
-            <div class="weather-forecast-icon">🌥️</div>
-            <div class="weather-forecast-temperature">9</div>
-            <div class="weather-forecast-unit">°C</div>
           </div>
         </div>
       </main>
@@ -61,5 +60,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
