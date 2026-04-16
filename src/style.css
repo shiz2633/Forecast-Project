@@ -1,11 +1,12 @@
 body {
   background-image: url("../src/images/sky.moving.gif");
   background-size: cover;
-  .arbutus-slab-regular {
-    font-family: "Arbutus Slab", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+}
+
+.arbutus-slab-regular {
+  font-family: "Arbutus Slab", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -16,13 +17,25 @@ a {
   );
 }
 
+.weather-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.weather-right {
+  text-align: right;
+  margin-right: 60px;
+}
+
 .weather-forecast {
   background: white;
-  width: 400px;
+  width: 600px;
   margin: auto;
+  margin-top: 60px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  padding: 30px;
-  border-radius: 100px;
+  padding: 20px;
+  border-radius: 60px;
 }
 
 header {
@@ -79,7 +92,8 @@ main {
 .weather-forecast-data {
   display: flex;
   justify-content: space-between;
-  margin-left: 100px;
+  align-items: center;
+  width: 100%;
 }
 
 .weather-forecast-city {
@@ -91,11 +105,10 @@ main {
 
 .weather-forecast-details {
   font-size: 16px;
-  margin-top: 60px;
   line-height: 28px;
   color: rgba(39, 33, 66, 0.8);
   font-weight: 500;
-  text-align: center;
+  margin: 0;
 }
 
 .weather-forecast-details strong {
@@ -105,11 +118,9 @@ main {
 
 .weather-forecast-temperature-container {
   display: flex;
-  flex-direction: row; /* horizontal layout */
-  align-items: center; /* vertical alignment */
-  margin-top: 0;
-  padding-top: 10px;
-  margin-left: 20px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .weather-forecast-temperature {
