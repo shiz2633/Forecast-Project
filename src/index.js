@@ -57,6 +57,15 @@ function displayWeather(response) {
 
   // Update time
   displayTime();
+
+  // Update icon
+  let iconElement = document.querySelector("#icon");
+  if (data.temperature.current > 30) {
+    iconElement.src =
+      "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png";
+  } else {
+    iconElement.src = data.condition.icon_url;
+  }
 }
 
 // Fetch weather data
